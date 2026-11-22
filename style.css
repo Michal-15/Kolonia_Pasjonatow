@@ -562,3 +562,25 @@ main {
         min-height: 155px;
     }
 }
+
+
+.stat-date {
+    position: relative;
+    margin-top: 7px;
+    color: #dcecff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stat-counter {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    color: #a9d8ff;
+    font-size: clamp(15px, 1.7vw, 18px);
+    font-weight: 850;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 20px rgba(75, 157, 239, 0.2);
+}
