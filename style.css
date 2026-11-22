@@ -16,8 +16,93 @@ body {
         url("images/20260825_122050.jpg") center center / cover no-repeat fixed;
 }
 
+.site-header {
+    width: 100%;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 12px 5%;
+    background: rgba(5, 13, 25, 0.78);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    display: block;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-navigation a {
+    padding: 10px 14px;
+    color: #f2f6fc;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus-visible {
+    color: #ffffff;
+    background: rgba(75, 153, 235, 0.28);
+    outline: none;
+}
+
 main {
     position: relative;
     z-index: 1;
-    min-height: 100vh;
+    min-height: calc(100vh - 88px);
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 14px 5%;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .main-navigation {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+
+    .main-navigation a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
 }
