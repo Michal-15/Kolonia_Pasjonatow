@@ -46,20 +46,46 @@
                 <article class="stat-card">
                     <span class="stat-value">40</span>
                     <span class="stat-label">Członków serwera</span>
-                    <span class="stat-note">łącznie z botami</span>
+                    <span class="stat-note">Aktualna liczba członków</span>
                 </article>
                 <article class="stat-card">
-                    <span class="stat-value">164</span>
-                    <span class="stat-label">Dni działania serwera</span>
-                    <span class="stat-note">Nasza społeczność na Discordzie</span>
+                    <span class="stat-label">Serwer Discord działa od</span>
+                    <time class="stat-date" datetime="2026-06-11">11 czerwca 2026 r.</time>
+                    <span class="stat-counter" data-start="2026-06-11T00:00:00+02:00">Ładowanie licznika…</span>
+                    <span class="stat-note">Czas działania serwera</span>
                 </article>
                 <article class="stat-card">
-                    <span class="stat-value">101 <small>dni</small></span>
-                    <span class="stat-label">Działania strony</span>
-                    <span class="stat-note">1 godz. i 24 min</span>
+                    <span class="stat-label">Strona działa od</span>
+                    <time class="stat-date" datetime="2026-08-13T20:15:00+02:00">13 sierpnia 2026 r., 20:15</time>
+                    <span class="stat-counter" data-start="2026-08-13T20:15:00+02:00">Ładowanie licznika…</span>
+                    <span class="stat-note">Czas działania strony</span>
                 </article>
             </div>
         </section>
     </main>
+    <script>
+        (() => {
+            const counters = document.querySelectorAll(".stat-counter[data-start]");
+
+            const updateCounters = () => {
+                const now = Date.now();
+
+                counters.forEach((counter) => {
+                    const start = new Date(counter.dataset.start).getTime();
+                    const elapsed = Math.max(0, Math.floor((now - start) / 1000));
+
+                    const days = Math.floor(elapsed / 86400);
+                    const hours = Math.floor((elapsed % 86400) / 3600);
+                    const minutes = Math.floor((elapsed % 3600) / 60);
+                    const seconds = elapsed % 60;
+
+                    counter.textContent = `${days} dni · ${String(hours).padStart(2, "0")} godz. · ${String(minutes).padStart(2, "0")} min · ${String(seconds).padStart(2, "0")} sek.`;
+                });
+            };
+
+            updateCounters();
+            window.setInterval(updateCounters, 1000);
+        })();
+    </script>
 </body>
 </html>
