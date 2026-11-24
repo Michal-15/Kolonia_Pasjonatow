@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oficjalna strona społeczności Kolonia Pasjonatów. Dołącz do nas na Discordzie!">
-    <title>Kolonia Pasjonatów</title>
+    <meta name="description" content="Oficjalna strona społeczności Kolonia Pasjonatów. Poznaj nasze działy, wydarzenia i dołącz do nas na Discordzie.">
+    <meta name="theme-color" content="#08111e">
+    <title>Kolonia Pasjonatów — społeczność, która łączy pasje</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="index.html" aria-label="Kolonia Pasjonatów — strona główna">
+        <a class="brand" href="#start" aria-label="Kolonia Pasjonatów — strona główna">
             <img class="brand-logo" src="images/c25ccbcb-e6ad-47c7-842c-734ead0ecb45.webp" alt="Logo Kolonii Pasjonatów">
-            <span class="brand-name">Kolonia Pasjonatów</span>
+            <span class="brand-name">KOLONIA PASJONATÓW</span>
         </a>
-
         <nav class="main-navigation" aria-label="Nawigacja główna">
-            <a href="#">Test</a>
-            <a href="#">Test 1</a>
-            <a href="#">Test 2</a>
-            <a href="#">Test 3</a>
+            <a href="#o-nas">O nas</a>
+            <a href="#dzialy">Nasze działy</a>
+            <a href="#kanal">Mój kanał</a>
+            <a class="nav-join" href="https://discord.gg/886u97g22Q" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a>
         </nav>
     </header>
 
-    <main>
+    <main id="start">
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
-                <p class="hero-eyebrow">Witaj w naszej społeczności</p>
-                <h1 id="hero-title">Witamy w <span>Kolonii Pasjonatów!</span></h1>
-                <p class="hero-description">Miejsce, w którym pasje łączą ludzi. Dołącz do nas i poznaj naszą społeczność!</p>
-                <a class="discord-button" href="https://discord.gg/886u97g22Q" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/discord/ffffff" alt="" aria-hidden="true">
-                    <span>Dołącz do nas</span>
-                </a>            </a>
+                <p class="hero-eyebrow"><span class="eyebrow-line"></span> MIEJSCE DLA TWOICH PASJI <span class="eyebrow-line"></span></p>
+                <h1 id="hero-title">Jedna społeczność.<br><span>Nieskończenie wiele pasji.</span></h1>
+                <p class="hero-description">Witamy w Kolonii Pasjonatów — miejscu, w którym spotykają się ludzie, zainteresowania i dobre pomysły. Znajdź swój dział, poznaj ekipę i zostań z nami na dłużej.</p>
+                <div class="hero-actions">
+                    <a class="discord-button" href="https://discord.gg/886u97g22Q" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/discord/ffffff" alt="" aria-hidden="true">
+                        <span>Dołącz do Discorda <span aria-hidden="true">↗</span></span>
+                    </a>
+                    <a class="secondary-button" href="#dzialy">Odkryj stronę <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-bottom-note"><span class="status-dot"></span> Społeczność otwarta na nowych pasjonatów</div>
             </div>
+            <div class="hero-side-mark" aria-hidden="true"><span>KP</span><i></i><span>2026</span></div>
         </section>
 
-        <section class="about-section" id="o-nas" aria-labelledby="about-title">
+        <section class="about-section page-section" id="o-nas" aria-labelledby="about-title">
             <div class="section-heading">
-                <p class="section-eyebrow">Poznaj nas bliżej</p>
+                <p class="section-eyebrow">KIM JESTEŚMY</p>
                 <h2 id="about-title">Więcej niż zwykły serwer</h2>
-                <p class="about-description">Kolonia Pasjonatów to miejsce dla osób, które lubią dzielić się swoimi zainteresowaniami, poznawać nowych ludzi i wspólnie spędzać czas. Tworzymy społeczność, w której każdy może znaleźć swoje miejsce, porozmawiać i rozwijać pasje.</p>
+                <p class="about-description">Kolonia Pasjonatów to miejsce dla osób, które lubią dzielić się zainteresowaniami, poznawać nowych ludzi i wspólnie spędzać czas. Rozmawiamy, organizujemy wydarzenia i tworzymy przestrzeń, w której każdy może znaleźć swoje miejsce.</p>
             </div>
-
             <div class="stats-grid" aria-label="Statystyki Kolonii Pasjonatów">
                 <article class="stat-card">
                     <span class="stat-value">40</span>
@@ -52,37 +56,122 @@
                     <span class="stat-label">Serwer Discord działa od</span>
                     <time class="stat-date" datetime="2026-06-11T20:10:00+02:00">11 czerwca 2026 r., 20:10</time>
                     <span class="stat-counter" data-start="2026-06-11T20:10:00+02:00">Ładowanie licznika…</span>
-                    <span class="stat-note">Czas działania serwera</span>
+                    <span class="stat-note">Wspólny czas naszej społeczności</span>
                 </article>
                 <article class="stat-card">
                     <span class="stat-label">Strona działa od</span>
                     <time class="stat-date" datetime="2026-08-13T20:15:00+02:00">13 sierpnia 2026 r., 20:15</time>
                     <span class="stat-counter" data-start="2026-08-13T20:15:00+02:00">Ładowanie licznika…</span>
-                    <span class="stat-note">Czas działania strony</span>
+                    <span class="stat-note">Nasze miejsce w sieci</span>
                 </article>
             </div>
         </section>
+
+        <section class="departments-section page-section" id="dzialy" aria-labelledby="departments-title">
+            <div class="section-heading section-heading-wide">
+                <p class="section-eyebrow">ROZEJRZYJ SIĘ</p>
+                <h2 id="departments-title">Co znajdziesz w Kolonii?</h2>
+                <p class="about-description">Wybierz dział, który najbardziej Cię interesuje. Każdy z nich to inna część naszej społeczności.</p>
+            </div>
+            <div class="department-grid">
+                <a class="department-card department-featured" href="#rankingi">
+                    <span class="department-number">01 / RYWALIZACJA</span>
+                    <span class="department-icon" aria-hidden="true">🏆</span>
+                    <h3>Rankingi</h3>
+                    <p>Zestawienia, głosowania i sprawdzanie, co cieszy się największym uznaniem społeczności.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+                <a class="department-card" href="#wydarzenia">
+                    <span class="department-number">02 / RAZEM</span>
+                    <span class="department-icon" aria-hidden="true">📅</span>
+                    <h3>Wydarzenia</h3>
+                    <p>Wspólne akcje, spotkania i ważne daty z życia serwera.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+                <a class="department-card" href="#konkursy">
+                    <span class="department-number">03 / ZABAWA</span>
+                    <span class="department-icon" aria-hidden="true">🎯</span>
+                    <h3>Konkursy</h3>
+                    <p>Wyzwania, rywalizacja i okazje, by pokazać swoje umiejętności.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+                <a class="department-card" href="#galeria">
+                    <span class="department-number">04 / WSPOMNIENIA</span>
+                    <span class="department-icon" aria-hidden="true">🖼️</span>
+                    <h3>Galeria</h3>
+                    <p>Zdjęcia, materiały i chwile, którymi chcemy się dzielić.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+                <a class="department-card" href="#historia">
+                    <span class="department-number">05 / NASZA DROGA</span>
+                    <span class="department-icon" aria-hidden="true">📖</span>
+                    <h3>Historia społeczności</h3>
+                    <p>Najważniejsze momenty i etapy rozwoju Kolonii Pasjonatów.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+                <a class="department-card" href="#ekonomia">
+                    <span class="department-number">06 / SYSTEM SERWERA</span>
+                    <span class="department-icon" aria-hidden="true">🪙</span>
+                    <h3>Ekonomia</h3>
+                    <p>Poznaj system aktywności i ekonomię działającą na serwerze.</p>
+                    <span class="department-link">Odkryj dział <b aria-hidden="true">↗</b></span>
+                </a>
+            </div>
+        </section>
+
+        <section class="channel-section page-section" id="kanal" aria-labelledby="channel-title">
+            <div class="channel-panel">
+                <div class="channel-copy">
+                    <p class="section-eyebrow">DRUGA CZĘŚĆ PROJEKTU</p>
+                    <h2 id="channel-title">Mój kanał</h2>
+                    <p>Osobne miejsce na filmy, najnowsze materiały i projekty tworzone poza serwerem. Ta sekcja może zostać połączona z kanałem YouTube, gdy dodamy właściwy adres i wybrane materiały.</p>
+                    <span class="coming-soon">SEKCJA DO ROZBUDOWY</span>
+                </div>
+                <div class="channel-emblem" aria-hidden="true"><span>▶</span><small>VIDEO<br>ZONE</small></div>
+            </div>
+        </section>
+
+        <section class="department-details page-section" aria-label="Zapowiedzi działów">
+            <div class="detail-panel" id="rankingi"><span>01</span><div><h3>Rankingi</h3><p>W tym miejscu pojawią się aktualne zestawienia i wyniki głosowań.</p></div><em>W PRZYGOTOWANIU</em></div>
+            <div class="detail-panel" id="wydarzenia"><span>02</span><div><h3>Wydarzenia</h3><p>Tu znajdziesz zapowiedzi i podsumowania wydarzeń społeczności.</p></div><em>W PRZYGOTOWANIU</em></div>
+            <div class="detail-panel" id="konkursy"><span>03</span><div><h3>Konkursy</h3><p>Informacje o konkursach, zasadach i zwycięzcach.</p></div><em>W PRZYGOTOWANIU</em></div>
+            <div class="detail-panel" id="galeria"><span>04</span><div><h3>Galeria</h3><p>Miejsce na zdjęcia i materiały udostępniane przez społeczność.</p></div><em>W PRZYGOTOWANIU</em></div>
+            <div class="detail-panel" id="historia"><span>05</span><div><h3>Historia społeczności</h3><p>Oś czasu z ważnymi momentami w historii Kolonii Pasjonatów.</p></div><em>W PRZYGOTOWANIU</em></div>
+            <div class="detail-panel" id="ekonomia"><span>06</span><div><h3>Ekonomia</h3><p>Opis systemu ekonomii i aktywności na serwerze.</p></div><em>W PRZYGOTOWANIU</em></div>
+        </section>
+
+        <section class="join-section" aria-labelledby="join-title">
+            <p class="section-eyebrow">DOŁĄCZ DO NAS</p>
+            <h2 id="join-title">Twoje miejsce jest tutaj.</h2>
+            <p>Wpadnij na serwer, poznaj ludzi i rozwijaj z nami swoje zainteresowania.</p>
+            <a class="discord-button" href="https://discord.gg/886u97g22Q" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn.simpleicons.org/discord/ffffff" alt="" aria-hidden="true">
+                <span>Dołącz do Discorda <span aria-hidden="true">↗</span></span>
+            </a>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="#start">KOLONIA PASJONATÓW</a>
+        <span>Tworzymy społeczność, która łączy pasje.</span>
+        <a href="#start" class="back-to-top">Na górę ↑</a>
+    </footer>
+
     <script>
         (() => {
             const counters = document.querySelectorAll(".stat-counter[data-start]");
-
             const updateCounters = () => {
                 const now = Date.now();
-
                 counters.forEach((counter) => {
                     const start = new Date(counter.dataset.start).getTime();
                     const elapsed = Math.max(0, Math.floor((now - start) / 1000));
-
                     const days = Math.floor(elapsed / 86400);
                     const hours = Math.floor((elapsed % 86400) / 3600);
                     const minutes = Math.floor((elapsed % 3600) / 60);
                     const seconds = elapsed % 60;
-
                     counter.textContent = `${days} dni · ${String(hours).padStart(2, "0")} godz. · ${String(minutes).padStart(2, "0")} min · ${String(seconds).padStart(2, "0")} sek.`;
                 });
             };
-
             updateCounters();
             window.setInterval(updateCounters, 1000);
         })();
