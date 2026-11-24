@@ -271,67 +271,54 @@ main {
     line-height: 1.8;
 }
 
-/* Przycisk Discord */
-.discord-button {
-    position: relative;
+/* From Uiverse.io by DarthKarim - https://uiverse.io/DarthKarim/silly-grasshopper-9
+   MIT License, Copyright (c) Yaya12085 (Yaya Mohamed), DarthKarim (Karim) */
+.kp-discord-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    min-height: 56px;
-    padding: 14px 27px;
-    overflow: hidden;
-    color: #ffffff;
-    background: linear-gradient(135deg, #6875ff, #4d5be8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.2px;
+    border: 2px solid #000;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    outline: 0;
+    transition: all 0.2s ease;
     text-decoration: none;
-    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
 }
 
-.discord-button::before {
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 75%;
-    height: 100%;
-    content: "";
-    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transform: skewX(-20deg);
-    transition: left 550ms ease;
+.kp-discord-button:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
 }
 
-.discord-button img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 23px;
-    height: 23px;
+.kp-discord-button:focus-visible {
+    outline: 3px solid #a6d4ff;
+    outline-offset: 4px;
 }
 
-.discord-button span {
-    position: relative;
-    z-index: 1;
+.kp-discord-icon {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-.discord-button:hover,
-.discord-button:focus-visible {
-    filter: brightness(1.08);
-    box-shadow: 0 14px 38px rgba(88, 101, 242, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.24);
-    transform: translateY(-4px);
-    outline: none;
+.kp-discord-texts {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
 }
 
-.discord-button:hover::before {
-    left: 145%;
+.kp-discord-text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
-.discord-button:active {
-    transform: translateY(-1px) scale(0.98);
+.kp-discord-text-2 {
+    font-weight: 600;
 }
 
 /* Animacje wejścia i delikatnego tła */
